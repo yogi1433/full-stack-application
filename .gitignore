@@ -1,0 +1,16 @@
+# Ignore node_modules for both backend and frontend
+/backend/node_modules/
+/my-app/node_modules/
+
+# Ignore environment files for both backend and frontend
+/backend/.env
+/my-app/.env
+
+# Ignore build output for React frontend
+/my-app/build/
+
+# Other common ignores
+.DS_Store
+*.log
+*.bak
+*.bat
