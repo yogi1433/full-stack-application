@@ -7,7 +7,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://192.168.116.1:3000", // Add the front-end URL to allow requests
+    origin: process.env.CORS_ORIGIN, // Add the front-end URL to allow requests
     methods: ["GET", "POST"],
     credentials: true,
   })

@@ -32,8 +32,9 @@ function LoginSignup({ onLogin }) {
 
     try {
       const endpoint = isLogin ? "/api/login" : "/api/signup";
-      const baseUrl = process.env.REACT_APP_API_URL || "http://localhost:5000"; // Use an environment variable for easier config
-      const response = await axios.post(`${baseUrl}${endpoint}`, {
+      const backendUrl =
+        process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"; // Use an environment variable for easier config
+      const response = await axios.post(`${backendUrl}${endpoint}`, {
         username,
         password,
       });
